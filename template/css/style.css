@@ -1,0 +1,488 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --color1:#2C2D31;
+    --color2:#16a085;
+
+}
+
+
+
+/* header  */
+
+.header {
+    width:100%;
+    z-index:10;
+    position:fixed;
+    top:0;
+    left:0;
+    transition:0.2s;
+    
+}
+
+.logo {
+    font-size:40px;
+    font-weight:600;
+    color:#ffffff;
+}
+
+.menuitems a {
+    text-decoration:none;
+    color:#ffffff;
+    font-size:16px;
+    font-weight:300;
+    margin-left:22px;
+    transition:0.4s;
+}
+
+.bars {
+    display: none ;
+    color:#fff;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.menuitems a:hover {
+    color:var(--color2) ;
+}
+
+
+/*header2 */
+
+.header2 {
+    background-color:var(--color1);
+    height:50vh;
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index: 9;
+    width:100%;
+    padding:250px 0px;
+    transform:translateY(-100%);
+    transition:0.5s;
+
+}
+
+.show {
+    transform:translateY(0%);
+
+}
+.header2 a {
+    text-decoration:none;
+    color:#fff;
+    font-size:18px;
+   
+}
+
+.header2 a:hover {
+    color:var(--color2) ;
+}
+
+
+
+/*section1*/ 
+
+
+.bg {
+    background-image:url("../images/home.jpg");
+    background-repeat:no-repeat;
+    background-size:fill;
+    background-position:left right;
+    background-attachment:fixed ;
+    
+    
+    
+
+}
+
+.content-1 {
+   
+    padding:170px 0px;
+
+}
+
+.content-1 h1 {
+    font-size:42px;
+    word-spacing:8px;
+    font-weight:400;
+}
+
+.content-1 p {
+    font-size:16px;
+    font-weight:300;
+    
+    
+}
+
+.content-1 a {
+    border:2px solid #fff !important;
+    color:#fff;
+    padding:8px 20px;
+    display:inline-block;
+    border-radius:32px !important;
+    transition:0.4s !important;
+    font-size:16px;
+}
+
+.content-1 a:hover {
+    background-color:var(--color2) !important;
+    border:2px solid transparent !important;
+
+}
+
+
+
+
+
+/*section2*/
+
+.services i {
+    font-size:40px;
+    padding:32px;
+    border:2px solid #545353;
+    border-radius:50%;
+    color:#545353;
+    transition:0.4s;
+}
+
+.services h4 {
+    font-size:32px;
+    color:#383838;
+    font-weight:400;
+}
+
+.services p {
+    font-size:16px;
+    color:#888787;
+}
+.services a {
+    text-decoration:none;
+    font-size:14px;
+    color:#fff;
+    padding:8px 20px;
+    background-color:var(--color2);
+    border-radius:32px;
+    display:inline-block;
+}
+
+.serv1:hover i {
+    transform:scale(1.2);
+
+}
+
+
+/*section3*/
+
+.section3 {
+    background-color:#d5d5d5;
+
+}
+
+.filter-btn-group button {
+    text-decoration:none;
+    color:#000;
+    padding:8px 20px;
+    margin:8px;
+    border:2px solid transparent;
+    background-color:transparent;
+}
+
+.filter-btn-group button:hover {
+    border:2px solid var(--color2);
+}
+
+.filter-btn-group button.active {
+    background-color: #555;
+    color: #fff;
+}
+
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(145, 217, 243, 0.5);
+    opacity:0;
+    transition:0.4s;
+
+}
+
+.img-content {
+    position:absolute;
+    bottom:20px;
+    left:30px;
+    transform:scale(1.5,1.5);
+    opacity:0;
+    transition:0.4s;
+    color:var(--color1);
+}
+
+.img-content h3,p {
+    font-weight:700;
+    margin:0 !important;
+}
+
+.img-content h3 {
+    font-size:20px;
+}
+
+.portfolio-item:hover .overlay {
+    opacity:1;
+
+}
+
+.portfolio-item:hover .img-content {
+    opacity:1;
+    transform:scale(1,1);
+
+}
+
+.more a {
+    text-decoration:none;
+    font-size:14px;
+    color:#fff;
+    padding:8px 20px;
+    background-color:var(--color2);
+    border-radius:32px;
+    display:inline-block;
+}
+
+
+.carousel-indicators button {
+    color:black !important;
+    background-color:var(--color2) !important;
+}
+
+.fa-quote-right {
+    font-size:62px;
+    color:var(--color2);
+}
+
+
+
+/*section5*/
+
+.section5 {
+    background-color:#d5d5d5;
+}
+
+.card-body h3, .date {
+    color:var(--color2) !important;
+    font-weight:300;
+    word-spacing:8px;
+
+}
+
+.card-body p {
+     color:#888787;
+}
+
+
+.card-body a {
+
+    text-decoration:none;
+        font-size:14px;
+        color:#000000;
+        padding:8px 20px;
+        border-radius:32px;
+        display:inline-block;
+        transition:0.4s ease;
+        border:1px solid var(--color2);
+}
+
+.card-body a:hover {
+    color:#fff;
+    background-color:var(--color2);
+}
+
+.card img {
+   
+    transition:0.5s;
+}
+
+.img-card {
+
+    overflow:hidden;
+
+}
+
+.card:hover img {
+    transform:scale(1.2,1.2);
+}
+
+
+
+/*section-6*/
+
+.sec6-bg {
+    background-image:url(".././images/parallax2.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+   background-attachment:fixed;
+   padding:200px 0px;
+   position:relative;
+
+
+}
+
+.sec6-bg i {
+    color:var(--color2);
+    font-size : 62px;
+}
+
+
+.curveDownColor2 {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    fill:#d5d5d5;
+    stroke:#d5d5d5;
+}
+
+.curveUpColor2 {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    fill:#ffffff;
+    stroke:#ffffff;
+}
+
+.curveDownColor3 {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    fill:#d5d5d5;
+    stroke:#d5d5d5;
+}
+
+.curveUpColor3 {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+
+.footer p {
+    font-weight:300;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* resposive */
+
+
+@media (min-width:0px) and (max-width: 768px ) {
+
+    /*header*/
+
+
+
+    .header {
+        position:relative;
+        transition:0s;
+        background-color:var(--color1) !important;
+       
+        
+    }
+   
+
+    .menuitems a {
+        display:none;
+
+    }
+
+    .bars {
+        display:block;
+        font-size:22px;
+    }
+
+    /*bg*/
+
+    .bg {
+        background-position:center;
+    }
+
+    .content-1 {
+        padding:100px 0px;
+    }
+
+  
+}
+
+
+/*mobile responsive */ 
+
+@media (min-width:0px ) and (max-width: 576px ) {
+
+
+    /*content-1 */
+
+    .content-1 h1 {
+        font-size:22px;
+    }
+
+    .content-1 p {
+        font-size:14px;
+    }
+
+    .content-1 a {
+        font-size:12px;
+        padding:8px 18px;
+    }
+
+
+    .services i {
+        font-size:30px;
+        padding:20px;
+    }
+
+    .services h4 {
+        font-size:20px;
+        color:#383838;
+        font-weight:400;
+    }
+
+
+
+
+}
+
+/*tabs*/
+
+
+@media (min-width: 576px) and (max-width: 768px ) {
+
+
+}
+
+
+
